@@ -153,11 +153,11 @@ struct SettingsView: View {
                     HStack {
                         Text("Version")
                         Spacer()
-                        Text("1.0.0")
+                        Text("1.0.1")
                             .foregroundColor(.secondary)
                     }
 
-                    Link(destination: URL(string: "https://github.com")!) {
+                    Link(destination: URL(string: "https://github.com/Smahomed04/AdventureLogger.git")!) {
                         HStack {
                             Text("GitHub Repository")
                             Spacer()

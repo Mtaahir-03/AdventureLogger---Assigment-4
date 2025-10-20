@@ -528,9 +528,9 @@ The app includes sample preview data for testing:
 
 ---
 
-## 📊 Assessment Requirements Coverage
+## 📊 iOS Development Features
 
-This project fulfills all requirements for the iOS Application Development assessment:
+This project implements comprehensive iOS development best practices:
 
 | Requirement | Implementation | Status |
 |------------|---------------|---------|
@@ -578,7 +578,6 @@ This project fulfills all requirements for the iOS Application Development asses
 
 ## 🐛 Known Issues
 
-- Tab bar hides on Map view when using standard TabView (by design for full-screen map)
 - Google Places API requires real API key for live data (falls back to mock data)
 - Export share sheet requires iOS device (not available in simulator)
 
@@ -593,8 +592,8 @@ This project fulfills all requirements for the iOS Application Development asses
 - [ ] Custom place categories
 - [x] ~~Dark mode optimizations~~ ✅ Complete
 - [ ] iPad-optimized layout
-- [ ] Widget for home screen
-- [ ] Siri shortcuts integration
+- [x] ~~Widget for home screen~~ ✅ Complete
+- [x] ~~Siri shortcuts integration~~ ✅ Complete
 - [x] ~~Trip organization~~ ✅ Complete
 - [x] ~~Place of Worship category~~ ✅ Complete
 - [x] ~~Country-based map filtering~~ ✅ Complete
@@ -603,7 +602,7 @@ This project fulfills all requirements for the iOS Application Development asses
 
 ## 📄 License
 
-This project is created for educational purposes as part of an iOS Development course assessment.
+This is a personal project built to explore and showcase modern iOS development techniques.
 
 ---
 

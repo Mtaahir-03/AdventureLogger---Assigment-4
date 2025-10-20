@@ -361,4 +361,4 @@ All views include SwiftUI `#Preview` for rapid development and testing.
 
 ## License
 
-This project is created for educational purposes as part of an iOS development course assessment.
+This is a personal project showcasing modern iOS development architecture and best practices.
