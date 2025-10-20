@@ -7,5 +7,12 @@
 		<string>remote-notification</string>
 		<string>location</string>
 	</array>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>LogCurrentLocationIntent</string>
+		<string>AddPlaceIntent</string>
+	</array>
+	<key>NSSiriUsageDescription</key>
+	<string>AdventureLogger uses Siri to help you quickly add places and log your current location.</string>
 </dict>
 </plist>

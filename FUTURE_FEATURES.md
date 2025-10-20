@@ -436,31 +436,44 @@ entity Expense {
 ---
 
 #### 11. AI Travel Assistant (Voice) 🎙️
-**Priority: MEDIUM**
-**Estimated Effort: 2-3 weeks**
+**Priority: MEDIUM** → ✅ **PARTIALLY COMPLETED**
+**Estimated Effort: 2-3 weeks** → **1 week completed**
 
 **Features:**
-- "Hey AdventureLogger, add Bondi Beach to my trip"
-- Voice-to-text for reflections
-- Ask questions ("Where's the nearest mosque?")
-- Siri Shortcuts integration
-- Voice-guided tours
-- Hands-free logging while driving
-- AI suggestions via voice
-- Multi-language support
+- ✅ "Hey Siri, add Bondi Beach to AdventureLogger" - **DONE**
+- ✅ "Hey Siri, log my current location" - **DONE**
+- ✅ Intelligent location search (finds places on map) - **DONE**
+- ✅ Siri Shortcuts integration - **DONE**
+- ✅ Hands-free logging while driving - **DONE**
+- ⬜ Voice-to-text for reflections
+- ⬜ Ask questions ("Where's the nearest mosque?")
+- ⬜ Voice-guided tours
+- ⬜ AI suggestions via voice
+- ⬜ Multi-language support
 
 **Technical Implementation:**
-- SiriKit integration
-- Speech framework
-- Natural language processing
-- Intent system
+- ✅ App Intents framework (iOS 16+)
+- ✅ MKLocalSearch for location geocoding
+- ✅ Natural language processing for place names
+- ✅ Intent system with parameters
+- ✅ MainActor concurrency for CoreData
+- ⬜ Speech framework
+- ⬜ Advanced NLP
+
+**What's Working:**
+- **LogCurrentLocationIntent** - Grabs GPS, reverse geocodes address, saves to CoreData
+- **AddPlaceIntent** - Searches Apple Maps for place name, pins exact location automatically
+- **Widget Integration** - All Siri additions update widget in real-time
+- **Error Handling** - Graceful fallbacks for location not found
+- **Shortcuts App** - Auto-appears with custom phrases
 
 **Why This Wins:**
-- Convenient while traveling
-- Accessibility feature
-- Futuristic feel
-- Reduces friction
-- AirPods generation loves voice
+- ✅ Convenient while traveling
+- ✅ Accessibility feature
+- ✅ Futuristic feel
+- ✅ Reduces friction
+- ✅ AirPods generation loves voice
+- ✅ Works completely hands-free
 
 ---
 
@@ -615,10 +628,12 @@ entity Expense {
 
 ### High Impact, Low Effort
 
-1. **Widget Support** (1 week)
-   - Show next trip/recent places on home screen
-   - Lock screen widgets (iOS 16+)
-   - Quick add place widget
+1. **Widget Support** (1 week) ✅ **COMPLETED**
+   - ✅ Show next trip/recent places on home screen
+   - ✅ Live widget updates when adding places
+   - ✅ Multiple widget sizes (Small, Medium, Large)
+   - ⬜ Lock screen widgets (iOS 16+)
+   - ⬜ Quick add place widget
 
 2. **Apple Watch App** (2 weeks)
    - Quick place check-in
@@ -626,11 +641,14 @@ entity Expense {
    - Trip overview
    - Achievements progress
 
-3. **Shortcuts Integration** (1 week)
-   - "Add current location"
-   - "Show my trips"
-   - "Log place as visited"
-   - Automation triggers
+3. **Shortcuts Integration** (1 week) ✅ **COMPLETED**
+   - ✅ "Add current location" with automatic address lookup
+   - ✅ "Add place by name" with intelligent location search
+   - ✅ Siri integration with natural language
+   - ✅ Automatic widget updates from Siri
+   - ⬜ "Show my trips"
+   - ⬜ "Log place as visited"
+   - ⬜ Automation triggers
 
 4. **Export Enhancements** (3 days)
    - PDF trip reports (beautiful formatting)
@@ -938,11 +956,12 @@ entity Expense {
 ## 📈 Development Priorities
 
 ### Must-Have (Next 6 Months)
-1. ✅ Photo integration
-2. ✅ Story mode
-3. ✅ AI recommendations
+1. ⬜ Photo integration
+2. ⬜ Story mode
+3. ⬜ AI recommendations
 4. ⬜ Collaborative planning
-5. ⬜ Widget support
+5. ✅ Widget support - **COMPLETED**
+6. ✅ Siri Shortcuts - **COMPLETED**
 
 ### Should-Have (6-12 Months)
 6. ⬜ Gamification
