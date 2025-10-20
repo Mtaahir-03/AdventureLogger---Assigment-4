@@ -4,41 +4,53 @@
 
 AdventureLogger is a comprehensive iOS application designed to help users track and manage places they want to visit or have visited, such as beaches, hikes, restaurants, and activities. The app allows users to mark places as visited, write personal reflections, and discover new places nearby using REST APIs.
 
-**Course**: iOS Application Development with External Tools
-**Assessment Weight**: 30% (30 marks)
 **Platform**: iOS (iPhone and iPad)
+**Last Updated**: October 20, 2025
 
 ---
 
 ## Features Implemented
 
-### 1. **Local Data Management** (CoreData & UserDefaults) ✅
+### 1. **App Extensions & Integrations** ✅
+- **Siri & Shortcuts**: Voice commands to add places and log current location
+  - LogCurrentLocationIntent with GPS and reverse geocoding
+  - AddPlaceIntent with intelligent MKLocalSearch
+  - Automatic widget updates from Siri
+- **Home Screen Widgets**: Live widgets showing latest adventures
+  - Timeline provider with 15-minute refresh
+  - Multiple sizes (Small, Medium, Large)
+  - Shared data via App Groups
+- **Share Extension**: Import places from Safari, Photos, and other apps
+  - Deep linking support
+  - Shared container data transfer
+
+### 2. **Local Data Management** (CoreData & UserDefaults) ✅
 - **CoreData**: Complete Place entity with attributes for name, category, location (latitude/longitude), visited status, personal reflections, ratings, dates, and more
 - **UserDefaults**: Settings for default category, search radius, map type, sort order, notifications, and CloudKit sync preferences
 - Persistent storage across app launches
 - Preview controller with sample data for development
 
-### 2. **Cloud Data Management** (CloudKit) ✅
+### 3. **Cloud Data Management** (CloudKit) ✅
 - Configured `NSPersistentCloudKitContainer` for automatic iCloud synchronization
 - CloudKit entitlements configured in `AdventureLogger.entitlements`
 - Automatic sync of adventures across all user devices
 - Background sync enabled via Info.plist configuration
 
-### 3. **Network Layers and REST APIs** ✅
+### 4. **Network Layers and REST APIs** ✅
 - **PlacesAPIService**: Custom service layer for Google Places API integration
 - Supports nearby place discovery with configurable radius and categories
 - Robust error handling with custom `DiscoverError` enum
 - Network request management using URLSession
 - Mock data for development/testing when API key is not configured
 
-### 4. **Advanced JSON Parsing** ✅
+### 5. **Advanced JSON Parsing** ✅
 - **DiscoveredPlace**: Custom Decodable implementation with nested JSON parsing
 - Handles complex Google Places API response structure
 - Parses nested geometry/location and editorial_summary objects
 - Custom CodingKeys for mapping API fields to Swift properties
 - Error handling for malformed JSON responses
 
-### 5. **Core Location and MapKit** ✅
+### 6. **Core Location and MapKit** ✅
 - **LocationManager**: Custom CLLocationManager wrapper with permission handling
 - Real-time user location tracking
 - Interactive map view showing all saved places
@@ -47,7 +59,7 @@ AdventureLogger is a comprehensive iOS application designed to help users track 
 - Reverse geocoding for address lookup
 - Distance calculation from user's current location
 
-### 6. **User Interface / UX** ✅
+### 7. **User Interface / UX** ✅
 - **Tab-based navigation**: Adventures (List), Map, Discover, Settings
 - **PlaceListView**: Searchable list with category filters, swipe-to-delete
 - **PlaceDetailView**: Comprehensive detail view with editing, map preview, ratings, reflections
@@ -59,7 +71,7 @@ AdventureLogger is a comprehensive iOS application designed to help users track 
 - Empty states and error handling UI
 - Responsive layouts for iPhone and iPad
 
-### 7. **Error Handling and Reporting** ✅
+### 8. **Error Handling and Reporting** ✅
 - Location access denied errors with user-friendly messages
 - Network error handling (connection failures, HTTP errors, timeouts)
 - JSON decoding error reporting
