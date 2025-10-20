@@ -14,7 +14,7 @@ fileprivate struct SharedPackage: Codable {
 }
 
 fileprivate enum SharedIO {
-    static let appGroupID = "group.com.shaiyankhan.AdventureLogger"
+    static let appGroupID = "group.muhammedsa-dmahomed.AdventureLogger"
     static let inboxDirName = "ShareInbox"
 
     static var containerURL: URL? {

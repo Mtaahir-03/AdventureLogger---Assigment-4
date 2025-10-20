@@ -7,6 +7,7 @@ import CoreLocation
 import MapKit
 import Combine
 import CoreData
+import WidgetKit
 
 struct AddPlaceView: View {
     @Environment(\.managedObjectContext) private var viewContext
@@ -289,6 +290,10 @@ struct AddPlaceView: View {
 
         do {
             try viewContext.save()
+
+            // Update widget with latest adventure
+            updateWidget(place: newPlace)
+
             dismiss()
         } catch {
             let nsError = error as NSError
@@ -296,6 +301,26 @@ struct AddPlaceView: View {
             locationErrorMessage = "Failed to save place. Please try again."
             showingLocationError = true
         }
+    }
+
+    private func updateWidget(place: Place) {
+        // Save to shared UserDefaults for widget
+        let appGroupID = "group.muhammedsa-dmahomed.AdventureLogger"
+        guard let defaults = UserDefaults(suiteName: appGroupID) else { return }
+
+        let snapshot: [String: Any] = [
+            "title": place.name ?? "New Adventure",
+            "subtitle": place.category ?? "",
+            "date": ISO8601DateFormatter().string(from: place.createdAt ?? Date()),
+            "metric": place.address ?? "\(place.latitude), \(place.longitude)"
+        ]
+
+        if let data = try? JSONSerialization.data(withJSONObject: snapshot) {
+            defaults.set(data, forKey: "widget.latestAdventure")
+        }
+
+        // Reload all widget timelines
+        WidgetCenter.shared.reloadAllTimelines()
     }
 }
 

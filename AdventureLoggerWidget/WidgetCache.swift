@@ -18,7 +18,7 @@ public struct WidgetAdventureSnapshot: Codable, Equatable {
 }
 
 public enum WidgetCache {
-    public static let appGroupID = "group.com.shaiyankhan.AdventureLogger"
+    public static let appGroupID = "group.muhammedsa-dmahomed.AdventureLogger"
     private static let key = "widget.latestAdventure"
 
     private static var defaults: UserDefaults? {

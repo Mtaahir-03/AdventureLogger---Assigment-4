@@ -5,6 +5,7 @@
 import SwiftUI
 import CoreLocation
 import CoreData
+import WidgetKit
 
 struct DiscoverView: View {
     @Environment(\.managedObjectContext) private var viewContext
@@ -146,6 +147,7 @@ struct DiscoverView: View {
 
         do {
             try viewContext.save()
+            updateWidget(place: newPlace)
         } catch {
             print("Error saving discovered place: \(error)")
         }
@@ -158,6 +160,24 @@ struct DiscoverView: View {
         case "park", "hiking_area": return "Hike"
         default: return "Activity"
         }
+    }
+
+    private func updateWidget(place: Place) {
+        let appGroupID = "group.muhammedsa-dmahomed.AdventureLogger"
+        guard let defaults = UserDefaults(suiteName: appGroupID) else { return }
+
+        let snapshot: [String: Any] = [
+            "title": place.name ?? "New Adventure",
+            "subtitle": place.category ?? "",
+            "date": ISO8601DateFormatter().string(from: place.createdAt ?? Date()),
+            "metric": place.address ?? "\(place.latitude), \(place.longitude)"
+        ]
+
+        if let data = try? JSONSerialization.data(withJSONObject: snapshot) {
+            defaults.set(data, forKey: "widget.latestAdventure")
+        }
+
+        WidgetCenter.shared.reloadAllTimelines()
     }
 }
 

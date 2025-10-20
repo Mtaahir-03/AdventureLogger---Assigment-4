@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,15 +34,13 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		893F8FA52E9FB12D00BB4BFD /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 13;
+			dstSubfolder = PlugIns;
 			files = (
 				893F8FA02E9FB12D00BB4BFD /* AdventureLoggerWidgetExtension.appex in Embed Foundation Extensions */,
 				89BC1B3B2EA10836001D4AC3 /* AdventureLoggerShareExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -109,27 +107,21 @@
 /* Begin PBXFrameworksBuildPhase section */
 		628E93822E8FA5B1007CC982 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				628E94A22E909D3C007CC982 /* Kingfisher in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		893F8F872E9FB12100BB4BFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				893F8F8F2E9FB12100BB4BFD /* SwiftUI.framework in Frameworks */,
 				893F8F8D2E9FB12100BB4BFD /* WidgetKit.framework in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		89BC1B2E2EA10836001D4AC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -204,14 +196,10 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			fileSystemSynchronizedGroups = (
 				893F8F902E9FB12100BB4BFD /* AdventureLoggerWidget */,
 			);
 			name = AdventureLoggerWidgetExtension;
-			packageProductDependencies = (
-			);
 			productName = AdventureLoggerWidgetExtension;
 			productReference = 893F8F8A2E9FB12100BB4BFD /* AdventureLoggerWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -226,14 +214,10 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			fileSystemSynchronizedGroups = (
 				89BC1B322EA10836001D4AC3 /* AdventureLoggerShareExtension */,
 			);
 			name = AdventureLoggerShareExtension;
-			packageProductDependencies = (
-			);
 			productName = AdventureLoggerShareExtension;
 			productReference = 89BC1B312EA10836001D4AC3 /* AdventureLoggerShareExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -271,7 +255,7 @@
 			packageReferences = (
 				628E94A02E909D3C007CC982 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
-			preferredProjectObjectVersion = 77;
+			preferredProjectObjectVersion = 90;
 			productRefGroup = 628E93862E8FA5B1007CC982 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -286,48 +270,36 @@
 /* Begin PBXResourcesBuildPhase section */
 		628E93832E8FA5B1007CC982 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		893F8F882E9FB12100BB4BFD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		89BC1B2F2EA10836001D4AC3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		628E93812E8FA5B1007CC982 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		893F8F862E9FB12100BB4BFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		89BC1B2D2EA10836001D4AC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -345,7 +317,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		628E93972E8FA5B2007CC982 /* Debug */ = {
+		628E93972E8FA5B2007CC982 /* Debug configuration for PBXNativeTarget "AdventureLogger" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -354,13 +326,14 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8YPHK9356F;
+				DEVELOPMENT_TEAM = 3YGS927W55;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AdventureLogger/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AdventureLogger;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "AdventureLogger uses your location to help you discover and track places you visit.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "AdventureLogger needs your location to discover nearby places and add them to your adventure list.";
@@ -379,24 +352,25 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = shaiyankhan.AdventureLogger;
+				PRODUCT_BUNDLE_IDENTIFIER = "muhammedsa-dmahomed.AdventureLogger";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Debug;
 		};
-		628E93982E8FA5B2007CC982 /* Release */ = {
+		628E93982E8FA5B2007CC982 /* Release configuration for PBXNativeTarget "AdventureLogger" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -405,13 +379,14 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8YPHK9356F;
+				DEVELOPMENT_TEAM = 3YGS927W55;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AdventureLogger/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AdventureLogger;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "AdventureLogger uses your location to help you discover and track places you visit.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "AdventureLogger needs your location to discover nearby places and add them to your adventure list.";
@@ -430,24 +405,25 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = shaiyankhan.AdventureLogger;
+				PRODUCT_BUNDLE_IDENTIFIER = "muhammedsa-dmahomed.AdventureLogger";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Release;
 		};
-		628E93992E8FA5B2007CC982 /* Debug */ = {
+		628E93992E8FA5B2007CC982 /* Debug configuration for PBXProject "AdventureLogger" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -509,7 +485,7 @@
 			};
 			name = Debug;
 		};
-		628E939A2E8FA5B2007CC982 /* Release */ = {
+		628E939A2E8FA5B2007CC982 /* Release configuration for PBXProject "AdventureLogger" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -563,7 +539,7 @@
 			};
 			name = Release;
 		};
-		893F8FA22E9FB12D00BB4BFD /* Debug */ = {
+		893F8FA22E9FB12D00BB4BFD /* Debug configuration for PBXNativeTarget "AdventureLoggerWidgetExtension" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -571,7 +547,7 @@
 				CODE_SIGN_ENTITLEMENTS = AdventureLoggerWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8YPHK9356F;
+				DEVELOPMENT_TEAM = 3YGS927W55;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AdventureLoggerWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = AdventureLoggerWidget;
@@ -583,17 +559,21 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = shaiyankhan.AdventureLogger.AdventureLoggerWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = "muhammedsa-dmahomed.AdventureLogger.AdventureLoggerWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		893F8FA32E9FB12D00BB4BFD /* Release */ = {
+		893F8FA32E9FB12D00BB4BFD /* Release configuration for PBXNativeTarget "AdventureLoggerWidgetExtension" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -601,7 +581,7 @@
 				CODE_SIGN_ENTITLEMENTS = AdventureLoggerWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8YPHK9356F;
+				DEVELOPMENT_TEAM = 3YGS927W55;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AdventureLoggerWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = AdventureLoggerWidget;
@@ -613,10 +593,14 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = shaiyankhan.AdventureLogger.AdventureLoggerWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = "muhammedsa-dmahomed.AdventureLogger.AdventureLoggerWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -624,13 +608,13 @@
 			};
 			name = Release;
 		};
-		89BC1B3C2EA10836001D4AC3 /* Debug */ = {
+		89BC1B3C2EA10836001D4AC3 /* Debug configuration for PBXNativeTarget "AdventureLoggerShareExtension" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = AdventureLoggerShareExtension/AdventureLoggerShareExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8YPHK9356F;
+				DEVELOPMENT_TEAM = 3YGS927W55;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AdventureLoggerShareExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = AdventureLoggerShareExtension;
@@ -642,23 +626,27 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = shaiyankhan.AdventureLogger.AdventureLoggerShareExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = "muhammedsa-dmahomed.AdventureLogger.AdventureLoggerShareExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		89BC1B3D2EA10836001D4AC3 /* Release */ = {
+		89BC1B3D2EA10836001D4AC3 /* Release configuration for PBXNativeTarget "AdventureLoggerShareExtension" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = AdventureLoggerShareExtension/AdventureLoggerShareExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8YPHK9356F;
+				DEVELOPMENT_TEAM = 3YGS927W55;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AdventureLoggerShareExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = AdventureLoggerShareExtension;
@@ -670,10 +658,14 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = shaiyankhan.AdventureLogger.AdventureLoggerShareExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = "muhammedsa-dmahomed.AdventureLogger.AdventureLoggerShareExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -687,37 +679,33 @@
 		628E93802E8FA5B1007CC982 /* Build configuration list for PBXProject "AdventureLogger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				628E93992E8FA5B2007CC982 /* Debug */,
-				628E939A2E8FA5B2007CC982 /* Release */,
+				628E93992E8FA5B2007CC982 /* Debug configuration for PBXProject "AdventureLogger" */,
+				628E939A2E8FA5B2007CC982 /* Release configuration for PBXProject "AdventureLogger" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		628E93962E8FA5B2007CC982 /* Build configuration list for PBXNativeTarget "AdventureLogger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				628E93972E8FA5B2007CC982 /* Debug */,
-				628E93982E8FA5B2007CC982 /* Release */,
+				628E93972E8FA5B2007CC982 /* Debug configuration for PBXNativeTarget "AdventureLogger" */,
+				628E93982E8FA5B2007CC982 /* Release configuration for PBXNativeTarget "AdventureLogger" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		893F8FA12E9FB12D00BB4BFD /* Build configuration list for PBXNativeTarget "AdventureLoggerWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				893F8FA22E9FB12D00BB4BFD /* Debug */,
-				893F8FA32E9FB12D00BB4BFD /* Release */,
+				893F8FA22E9FB12D00BB4BFD /* Debug configuration for PBXNativeTarget "AdventureLoggerWidgetExtension" */,
+				893F8FA32E9FB12D00BB4BFD /* Release configuration for PBXNativeTarget "AdventureLoggerWidgetExtension" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		89BC1B3E2EA10836001D4AC3 /* Build configuration list for PBXNativeTarget "AdventureLoggerShareExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				89BC1B3C2EA10836001D4AC3 /* Debug */,
-				89BC1B3D2EA10836001D4AC3 /* Release */,
+				89BC1B3C2EA10836001D4AC3 /* Debug configuration for PBXNativeTarget "AdventureLoggerShareExtension" */,
+				89BC1B3D2EA10836001D4AC3 /* Release configuration for PBXNativeTarget "AdventureLoggerShareExtension" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
