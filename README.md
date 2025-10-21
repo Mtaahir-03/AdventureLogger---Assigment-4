@@ -75,7 +75,7 @@ AdventureLogger is a comprehensive iOS application that helps you keep track of 
 
 ### 1. Clone or Download the Project
 ```bash
-git clone https://github.com/Smahomed04/AdventureLogger.git
+git clone https://github.com/Mtaahir-03/AdventureLogger---Assigment-4.git
 cd AdventureLogger
 ```
 
